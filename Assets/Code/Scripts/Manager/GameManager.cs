@@ -9,12 +9,16 @@ public class GameManager : MonoSingleton<GameManager> // 싱글톤 사용
     [Header("카메라 관련 코드")]
     public CameraShake cameraShake;
 
-    [Header("Player 관련 코드")]
+    [Header("컨트롤러")]
     public PlayerController playerController;
+
+    [Header("스탯")]
     public PlayerStats playerStats;
+    public EnemyStats enemyStats;
 
     [Header("게임 실행 중 플레이어 스텟값 수정")]
     public PlayerStatsRuntime playerStatsRuntime;
+    public EnemyStatsRuntime enemyStatsRuntime;
 
     protected new void Awake()
     {
@@ -29,6 +33,11 @@ public class GameManager : MonoSingleton<GameManager> // 싱글톤 사용
 
         base.Awake(); // MonoSingleton의 Awake 호출
 
+        // 적 초기화
+        enemyStatsRuntime = new EnemyStatsRuntime();
+        enemyStatsRuntime.CopyFrom(enemyStats); // 스텟 값 복제
+
+        // 플레이어 초기화
         playerStatsRuntime = new PlayerStatsRuntime();
         playerStatsRuntime.CopyFrom(playerStats); // 스텟 값 복제
     }
