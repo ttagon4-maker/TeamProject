@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour, IDamageable
 {
     public bool isGrounded;
 
@@ -71,4 +71,14 @@ public class PlayerController : MonoBehaviour
     {
         inputVec = value.Get<Vector2>();
     }
+
+    // 플레이어 데미지
+    void IDamageable.TakeDamage(int attack)
+    {
+        // 플레이어 체력 줄어들기
+        GameManager.Instance.playerStatsRuntime.currentHP -= attack;
+
+        Debug.Log("[플레이어 데미지] 플레이어 현재 체력: " + GameManager.Instance.playerStatsRuntime.currentHP);
+    }
+
 }

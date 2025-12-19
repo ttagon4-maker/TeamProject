@@ -3,28 +3,38 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour, IDamageable
 {
-    PlayerController controller;    // 플레이어
+    PlayerController player;        // 플레이어
     GrapplingHook grappling;        // 그래플링 훅
-    Physics2D physics;
+    IDamageable damageable;         // 데미지 여부 인터페이스
 
     private void Awake()
     {
-        //controller = GetComponent<PlayerController>();
-        //grappling = GetComponent<GrapplingHook>();
-        //physics = GetComponent<Physics2D>();
+        player = GetComponent<PlayerController>();
+        grappling = GetComponent<GrapplingHook>();
+        damageable = GetComponent<IDamageable>();
     }
 
     private void Update()
     {
-        //if (grappling.isAttach)
-        //{
-            
-        //}
+
     }
 
-    // 데미지
-    public void TakeDamage(int attack)
+    // 플레이어와 닿았을 경우
+    void OnTriggerEnter2D(Collider2D other)
     {
+        if (!other.CompareTag("Player")) return;
 
+        if (other.TryGetComponent<IDamageable>(out var playerDamageable))
+        {
+            playerDamageable.TakeDamage(1);
+        }
+    }
+
+    // 적 데미지
+    void IDamageable.TakeDamage(int attack)
+    {
+        GameManager.Instance.enemyStatsRuntime.currentHP -= attack;
+
+        Debug.Log("[적 데미지] 적 현재 체력: " + GameManager.Instance.enemyStatsRuntime.currentHP);
     }
 }
