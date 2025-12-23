@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 26578193}
   - component: {fileID: 26578192}
   - component: {fileID: 26578191}
+  - component: {fileID: 26578194}
   m_Layer: 0
   m_Name: Enemy2 (6)
   m_TagString: Enemy
@@ -285,6 +286,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &26578194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26578189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da319fc7f7b932741989639c6a8af631, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyController
 --- !u!1 &28387895
 GameObject:
   m_ObjectHideFlags: 0
@@ -298,6 +311,7 @@ GameObject:
   - component: {fileID: 28387898}
   - component: {fileID: 28387897}
   - component: {fileID: 28387900}
+  - component: {fileID: 28387901}
   m_Layer: 0
   m_Name: Enemy2 (7)
   m_TagString: Enemy
@@ -464,6 +478,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da319fc7f7b932741989639c6a8af631, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
+--- !u!114 &28387901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28387895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da319fc7f7b932741989639c6a8af631, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyController
 --- !u!1 &64819987
 GameObject:
   m_ObjectHideFlags: 0
@@ -578,6 +604,7 @@ GameObject:
   - component: {fileID: 66138985}
   - component: {fileID: 66138984}
   - component: {fileID: 66138983}
+  - component: {fileID: 66138986}
   m_Layer: 0
   m_Name: Enemy2 (5)
   m_TagString: Enemy
@@ -732,6 +759,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &66138986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66138981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da319fc7f7b932741989639c6a8af631, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyController
 --- !u!1 &117012760
 GameObject:
   m_ObjectHideFlags: 0
@@ -12291,6 +12330,7 @@ GameObject:
   - component: {fileID: 325858062}
   - component: {fileID: 325858061}
   - component: {fileID: 325858060}
+  - component: {fileID: 325858064}
   m_Layer: 0
   m_Name: Enemy2 (3)
   m_TagString: Enemy
@@ -12445,6 +12485,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 604865950}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &325858064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325858059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da319fc7f7b932741989639c6a8af631, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyController
 --- !u!1 &339037454
 GameObject:
   m_ObjectHideFlags: 0
@@ -17610,6 +17662,7 @@ GameObject:
   - component: {fileID: 428413507}
   - component: {fileID: 428413506}
   - component: {fileID: 428413505}
+  - component: {fileID: 428413509}
   m_Layer: 0
   m_Name: Enemy2 (1)
   m_TagString: Enemy
@@ -17764,6 +17817,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 604865950}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &428413509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428413504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da319fc7f7b932741989639c6a8af631, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyController
 --- !u!1 &481360742
 GameObject:
   m_ObjectHideFlags: 0
@@ -18912,6 +18977,7 @@ GameObject:
   - component: {fileID: 712223955}
   - component: {fileID: 712223954}
   - component: {fileID: 712223958}
+  - component: {fileID: 712223959}
   m_Layer: 0
   m_Name: Enemy2 (2)
   m_TagString: Enemy
@@ -19078,6 +19144,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da319fc7f7b932741989639c6a8af631, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
+--- !u!114 &712223959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 712223953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da319fc7f7b932741989639c6a8af631, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyController
 --- !u!1 &733997517
 GameObject:
   m_ObjectHideFlags: 0
@@ -19092,6 +19170,7 @@ GameObject:
   - component: {fileID: 733997520}
   - component: {fileID: 733997519}
   - component: {fileID: 733997523}
+  - component: {fileID: 733997524}
   m_Layer: 0
   m_Name: MovingEnemy
   m_TagString: Enemy
@@ -19281,6 +19360,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &733997524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733997517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da319fc7f7b932741989639c6a8af631, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyController
 --- !u!1 &754540130
 GameObject:
   m_ObjectHideFlags: 0
@@ -20733,6 +20824,7 @@ GameObject:
   - component: {fileID: 1021965188}
   - component: {fileID: 1021965187}
   - component: {fileID: 1021965186}
+  - component: {fileID: 1021965189}
   m_Layer: 0
   m_Name: Enemy2 (8)
   m_TagString: Enemy
@@ -20887,6 +20979,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1021965189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021965184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da319fc7f7b932741989639c6a8af631, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyController
 --- !u!1 &1025645482
 GameObject:
   m_ObjectHideFlags: 0
@@ -20937,7 +21041,7 @@ MonoBehaviour:
     attack: 0
     maxHP: 0
     currentHP: 0
-  escKey: {fileID: 1025645485}
+  escKey: {fileID: 0}
 --- !u!4 &1025645484
 Transform:
   m_ObjectHideFlags: 0
@@ -20978,6 +21082,7 @@ GameObject:
   - component: {fileID: 1029868198}
   - component: {fileID: 1029868197}
   - component: {fileID: 1029868196}
+  - component: {fileID: 1029868200}
   m_Layer: 0
   m_Name: Enemy2
   m_TagString: Enemy
@@ -21132,6 +21237,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 604865950}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1029868200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029868195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da319fc7f7b932741989639c6a8af631, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyController
 --- !u!1 &1070786559
 GameObject:
   m_ObjectHideFlags: 0
@@ -40968,6 +41085,7 @@ GameObject:
   - component: {fileID: 1134202660}
   - component: {fileID: 1134202659}
   - component: {fileID: 1134202658}
+  - component: {fileID: 1134202662}
   m_Layer: 0
   m_Name: Enemy1
   m_TagString: Enemy
@@ -41122,6 +41240,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 604865950}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1134202662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134202657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da319fc7f7b932741989639c6a8af631, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyController
 --- !u!1 &1145583781
 GameObject:
   m_ObjectHideFlags: 0
@@ -41134,6 +41264,7 @@ GameObject:
   - component: {fileID: 1145583785}
   - component: {fileID: 1145583784}
   - component: {fileID: 1145583783}
+  - component: {fileID: 1145583786}
   m_Layer: 0
   m_Name: Enemy2 (4)
   m_TagString: Enemy
@@ -41288,6 +41419,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1145583786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145583781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da319fc7f7b932741989639c6a8af631, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyController
 --- !u!1 &1148842848
 GameObject:
   m_ObjectHideFlags: 0
@@ -41673,6 +41816,7 @@ GameObject:
   - component: {fileID: 1298111047}
   - component: {fileID: 1298111046}
   - component: {fileID: 1298111045}
+  - component: {fileID: 1298111049}
   m_Layer: 0
   m_Name: Enemy2 (9)
   m_TagString: Enemy
@@ -41851,6 +41995,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1298111049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298111043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da319fc7f7b932741989639c6a8af631, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyController
 --- !u!1 &1331684992
 GameObject:
   m_ObjectHideFlags: 0

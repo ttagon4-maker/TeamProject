@@ -264,27 +264,6 @@ public class GrapplingHook : MonoBehaviour
     }
 
 	// 슬로우 효과 코루틴
-	//IEnumerator SlowRoutine()
-	//{
-	//    // 슬로우 적용
-	//    sprite.color = Color.red;
-	//    Time.timeScale = slowFactor;
-	//    Time.fixedDeltaTime = 0.02f * Time.timeScale;
-
-	//    // 서서히 원래 속도로 복귀
-	//    while (Time.timeScale < 1f)
-	//    {
-	//        Time.timeScale += (1f / slowLength) * Time.unscaledDeltaTime;
-	//        Time.timeScale = Mathf.Clamp(Time.timeScale, 0f, 1f);
-	//        Time.fixedDeltaTime = Time.timeScale * 0.02f;
-	//        yield return null;
-	//    }
-
-	//    // 오차 방지를 위해 기본값으로 복구
-	//    Time.timeScale = 1f;
-	//    Time.fixedDeltaTime = 0.02f;
-	//    sprite.color = Color.white;
-	//}
 	IEnumerator SlowRoutine()
 	{
 		// 슬로우 적용

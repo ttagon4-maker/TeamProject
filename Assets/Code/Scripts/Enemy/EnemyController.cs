@@ -18,7 +18,7 @@ public class EnemyController : MonoBehaviour, IDamageable
 	IDamageable damageable;
 	string throwingEnemyStr = "ThrowingEnemy";
 	string enemyStr = "Enemy";
-	EnemyState state;       // 몬스터 상태
+	//EnemyState state;       // 몬스터 상태
 
 	private void Awake()
 	{
@@ -65,17 +65,17 @@ public class EnemyController : MonoBehaviour, IDamageable
 
 		if (other.gameObject.CompareTag("Player"))
 		{
-			state = EnemyState.Thrown;
+			//state = EnemyState.Thrown;
 			transform.gameObject.tag = throwingEnemyStr;
 		}
 		else if(other.gameObject.CompareTag("Ground"))
 		{
-			state = EnemyState.None;
+			//state = EnemyState.None;
 			transform.gameObject.tag = enemyStr;
 		}
 		else
 		{
-			state = EnemyState.Thrown;
+			//state = EnemyState.Thrown;
 			transform.gameObject.tag = throwingEnemyStr;
 		}
 
@@ -96,12 +96,12 @@ public class EnemyController : MonoBehaviour, IDamageable
 	}
 
 	// 한 프레임 쉬었다 실행
-	IEnumerator ApplyStateNextFrame()
-	{
-		yield return null; // 다음 프레임까지 대기
-	}
+	//IEnumerator ApplyStateNextFrame()
+	//{
+	//	yield return null; // 다음 프레임까지 대기
+	//}
 
-	// 적 데미지
+	// 적 데미지 입히기
 	void IDamageable.TakeDamage(int attack)
 	{
 		currStat.currentHP -= attack;
