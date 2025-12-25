@@ -16,6 +16,7 @@ public class GrapplingHook : MonoBehaviour
     public bool isLineMax;
     public bool isAttach;
     public bool isEnemyAttach;
+	public bool isSlowing;		// 슬로우모션 중인지 여부
     bool hasShakedOnAttach = false;
     bool hasPlayedAttachSound = false;
     bool isPlayedDraftSound = false;
@@ -52,6 +53,7 @@ public class GrapplingHook : MonoBehaviour
         line.SetPosition(1, hook.position);
         line.useWorldSpace = true;
         isAttach = false;
+		isSlowing = false;
         hook.gameObject.SetActive(false);
 
 		hookJoint = hook.GetComponent<DistanceJoint2D>();
@@ -253,7 +255,6 @@ public class GrapplingHook : MonoBehaviour
             hasPlayedAttachSound = false;
         }
 
-
         line.enabled = true;
 
         // 훅 상태 초기화
@@ -267,7 +268,7 @@ public class GrapplingHook : MonoBehaviour
 	IEnumerator SlowRoutine()
 	{
 		// 슬로우 적용
-		sprite.color = Color.red;
+		//sprite.color = Color.red;
 		Time.timeScale = slowFactor;
 		Time.fixedDeltaTime = 0.02f * Time.timeScale;
 
@@ -275,11 +276,15 @@ public class GrapplingHook : MonoBehaviour
 
 		while (elapsed < slowLength)
 		{
+			isSlowing = true;
 			// 플레이어가 땅에 닿거나 그래플링 훅을 다시 사용하거나 몬스터를 잡을 경우 즉시 종료
 			if (player.isGrounded || isAttach || isEnemyAttach)
 			{
-				Debug.Log("슬로우모션 종료");
-				Debug.Log("isGrounded: " + player.isGrounded + ", isAttach: " + isAttach + ", isEnemyAttach: " + isEnemyAttach);
+				// TODO: 테스트용 출력 코드
+				//Debug.Log("슬로우모션 종료");
+				//Debug.Log("isGrounded: " + player.isGrounded + ", isAttach: " + isAttach + ", isEnemyAttach: " + isEnemyAttach);
+				Debug.Log("isSlowing: " + isSlowing);
+				isSlowing = false;
 				break;
 			}
 
