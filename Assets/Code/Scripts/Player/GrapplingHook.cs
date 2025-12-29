@@ -207,7 +207,7 @@ public class GrapplingHook : MonoBehaviour
 		}
 
 		// 적 던지기
-		else if (isEnemyAttach)
+		if (isEnemyAttach)
 		{
 			if (Mouse.current.rightButton.wasPressedThisFrame && enemies.Count > 0)
 			{
